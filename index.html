@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>遠藤商事 | 分譲マンション専門 水回りリフォーム＆配管メンテナンス</title>
+  <meta name="description" content="神奈川県横須賀市の遠藤商事。分譲マンション専有部の水回りリフォーム（キッチン・浴室・洗面台・トイレ）、給排水管・給湯管洗浄ならお任せください。通話無料 0120-856-251。管理規約申請代行・近隣挨拶・自社責任施工。">
+  <meta name="keywords" content="遠藤商事,リフォーム,水回り,分譲マンション,マンションリフォーム,配管洗浄,給湯器交換,キッチン,浴室,トイレ,洗面所,神奈川県,横須賀市船越町">
+
+  <style>
+    /* Reset & Variables */
+    :root {
+      --primary: #0f4c81;
+      --primary-dark: #0a3258;
+      --primary-light: #e8f1f8;
+      --secondary: #028090;
+      --accent: #e76f51;
+      --accent-hover: #d65a3b;
+      --text: #2b2d42;
+      --text-muted: #6c757d;
+      --bg-light: #f8fafc;
+      --bg-white: #ffffff;
+      --border: #e2e8f0;
+      --line: #06c755;
+      --radius: 8px;
+      --radius-lg: 14px;
+      --shadow: 0 4px 16px rgba(15, 76, 129, 0.08);
+      --font: "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font);
+      color: var(--text);
+      background-color: var(--bg-white);
+      line-height: 1.75;
+      padding-bottom: 70px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    @media (min-width: 992px) {
+      body { padding-bottom: 0; }
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: 0.25s;
+    }
+
+    ul, ol { list-style: none; }
+
+    .container {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .section-padding { padding: 60px 0; }
+    .bg-light { background-color: var(--bg-light); }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-en {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--secondary);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--primary);
+      position: relative;
+      padding-bottom: 12px;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 45px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--secondary), var(--primary));
+      border-radius: 2px;
+    }
+
+    .section-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-top: 10px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 26px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: all 0.25s ease;
+      text-align: center;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .btn-accent { background: linear-gradient(135deg, var(--accent), #f38367); color: #fff; }
+    .btn-accent:hover { background: linear-gradient(135deg, var(--accent-hover), #e66f51); }
+    .btn-line { background-color: var(--line); color: #fff; }
+    .btn-line:hover { background-color: #05ab49; }
+    .btn-primary { background-color: var(--primary); color: #fff; }
+    .btn-primary:hover { background-color: var(--primary-dark); }
+    .btn-outline { border: 2px solid var(--primary); color: var(--primary); background: transparent; }
+    .btn-outline:hover { background-color: var(--primary); color: #fff; }
+
+    /* Header */
+    .header {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      z-index: 1000;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 75px;
+    }
+
+    .logo-area { display: flex; flex-direction: column; }
+    .logo-sub { font-size: 0.7rem; font-weight: 700; color: var(--secondary); }
+    .logo-main { font-size: 1.4rem; font-weight: 800; color: var(--primary); display: flex; align-items: center; gap: 6px; }
+
+    .nav-menu { display: none; align-items: center; gap: 20px; }
+    @media (min-width: 1024px) { .nav-menu { display: flex; } }
+
+    .nav-item { font-size: 0.9rem; font-weight: 600; padding: 6px 0; }
+    .nav-item:hover { color: var(--secondary); }
+
+    .header-cta { display: none; align-items: center; gap: 12px; }
+    @media (min-width: 768px) { .header-cta { display: flex; } }
+
+    .header-tel { text-align: right; }
+    .header-tel-label { font-size: 0.65rem; color: var(--accent); font-weight: 800; display: block; }
+    .header-tel-num { font-size: 1.25rem; font-weight: 900; color: var(--primary); line-height: 1.1; }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 30px;
+      height: 22px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      z-index: 1100;
+    }
+    @media (min-width: 1024px) { .hamburger { display: none; } }
+    .hamburger span { width: 100%; height: 3px; background: var(--primary); border-radius: 2px; transition: 0.3s; }
+    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    /* Mobile Drawer */
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 80%;
+      max-width: 320px;
+      height: 100vh;
+      background: #fff;
+      box-shadow: -4px 0 20px rgba(0,0,0,0.15);
+      z-index: 1050;
+      padding: 70px 24px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: right 0.3s ease;
+      overflow-y: auto;
+    }
+    .mobile-menu.active { right: 0; }
+    .mobile-nav-list { display: flex; flex-direction: column; gap: 12px; }
+    .mobile-nav-link { font-size: 1rem; font-weight: 600; padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; }
+    .mobile-menu-overlay { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.5); z-index: 1040; opacity: 0; visibility: hidden; transition: 0.3s; }
+    .mobile-menu-overlay.active { opacity: 1; visibility: visible; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #0f4c81 0%, #028090 100%);
+      color: #fff;
+      padding: 60px 0 70px;
+      text-align: center;
+      position: relative;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.4);
+      padding: 5px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    .hero-title {
+      font-size: 1.85rem;
+      font-weight: 800;
+      line-height: 1.4;
+      margin-bottom: 18px;
+    }
+    @media (min-width: 768px) { .hero-title { font-size: 2.5rem; } }
+    .hero-title span { color: #ffe169; }
+    .hero-lead { font-size: 1rem; line-height: 1.7; margin-bottom: 30px; opacity: 0.95; }
+    .hero-features {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-bottom: 35px;
+      text-align: left;
+    }
+    @media (min-width: 768px) { .hero-features { grid-template-columns: repeat(3, 1fr); } }
+    .hero-feat-item {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .hero-feat-item svg { width: 20px; height: 20px; fill: #ffe169; flex-shrink: 0; }
+    .hero-ctas { display: flex; flex-direction: column; gap: 12px; justify-content: center; align-items: center; }
+    @media (min-width: 576px) { .hero-ctas { flex-direction: row; } }
+
+    /* Troubles */
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 24px;
+    }
+    @media (min-width: 768px) { .problem-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 992px) { .problem-grid { grid-template-columns: repeat(4, 1fr); } }
+    .problem-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 18px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .problem-icon {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 12px;
+      background: #fff0ed;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .problem-icon svg { width: 26px; height: 26px; fill: var(--accent); }
+    .problem-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+    .problem-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.55; }
+    .solution-box {
+      margin-top: 35px;
+      background: var(--primary-light);
+      border: 2px solid var(--secondary);
+      border-radius: var(--radius-lg);
+      padding: 24px 20px;
+      text-align: center;
+    }
+    .solution-box h3 { font-size: 1.25rem; font-weight: 800; color: var(--primary); }
+
+    /* Reasons */
+    .reasons-list { display: flex; flex-direction: column; gap: 24px; }
+    .reason-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 20px;
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    @media (min-width: 768px) {
+      .reason-card { grid-template-columns: 100px 1fr; padding: 30px 28px; align-items: center; }
+    }
+    .reason-num {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    .reason-num span { font-size: 0.65rem; font-weight: 700; }
+    .reason-num strong { font-size: 1.6rem; font-weight: 900; line-height: 1; }
+    .reason-card h3 { font-size: 1.2rem; font-weight: 800; color: var(--primary); margin-bottom: 8px; }
+    .reason-card p { font-size: 0.92rem; line-height: 1.65; }
+
+    /* Services */
+    .service-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    @media (min-width: 768px) { .service-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .service-grid { grid-template-columns: repeat(3, 1fr); } }
+    .service-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+    }
+    .service-card-header {
+      background: #f0f7fb;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .service-card-icon {
+      width: 48px;
+      height: 48px;
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    .service-card-icon svg { width: 24px; height: 24px; fill: var(--secondary); }
+    .service-card h3 { font-size: 1.15rem; font-weight: 800; color: var(--primary); }
+    .service-card-body { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+    .service-card p { font-size: 0.88rem; margin-bottom: 14px; line-height: 1.6; }
+    .service-list { background: var(--bg-light); padding: 12px 14px; border-radius: var(--radius); margin-bottom: 14px; }
+    .service-list li { font-size: 0.82rem; font-weight: 600; margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
+    .service-list li svg { width: 14px; height: 14px; fill: var(--secondary); flex-shrink: 0; }
+    .service-price { text-align: center; padding: 8px; background: #fff9f0; border-radius: var(--radius); border: 1px dashed #f4a261; font-size: 0.85rem; font-weight: 700; color: #c45a00; }
+
+    /* Flow */
+    .flow-list { display: flex; flex-direction: column; gap: 16px; }
+    .flow-step {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 18px;
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    @media (min-width: 768px) { .flow-step { grid-template-columns: 90px 1fr; padding: 20px 24px; align-items: center; } }
+    .flow-badge { background: var(--primary-light); color: var(--primary); font-weight: 800; font-size: 0.85rem; padding: 6px 10px; border-radius: var(--radius); text-align: center; }
+    .flow-step h3 { font-size: 1.05rem; font-weight: 800; color: var(--primary); margin-bottom: 4px; }
+    .flow-step p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.55; }
+
+    /* FAQ */
+    .faq-list { max-width: 840px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+    .faq-item { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+    .faq-q {
+      width: 100%;
+      text-align: left;
+      background: #fff;
+      border: none;
+      padding: 18px 20px;
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      cursor: pointer;
+    }
+    .faq-q:hover { background: var(--bg-light); }
+    .faq-q-txt { display: flex; align-items: center; gap: 10px; }
+    .faq-q-badge { background: var(--primary); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.8rem; flex-shrink: 0; }
+    .faq-icon { width: 18px; height: 18px; fill: var(--text-muted); transition: 0.3s; flex-shrink: 0; }
+    .faq-item.active .faq-icon { transform: rotate(180deg); fill: var(--primary); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; background: var(--bg-light); }
+    .faq-item.active .faq-a { max-height: 250px; padding: 18px 20px; border-top: 1px solid var(--border); }
+    .faq-a-inner { display: flex; gap: 10px; font-size: 0.92rem; line-height: 1.65; }
+    .faq-a-badge { background: var(--accent); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.8rem; flex-shrink: 0; }
+
+    /* Company Table */
+    .company-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 30px 20px;
+      box-shadow: var(--shadow);
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    @media (min-width: 768px) { .company-box { padding: 36px 32px; } }
+    .company-table { width: 100%; border-collapse: collapse; }
+    .company-table tr { border-bottom: 1px solid var(--border); }
+    .company-table tr:last-child { border-bottom: none; }
+    .company-table th { padding: 14px 10px; font-weight: 700; color: var(--primary); width: 28%; vertical-align: top; font-size: 0.92rem; background: rgba(15, 76, 129, 0.02); }
+    .company-table td { padding: 14px 10px; font-size: 0.92rem; line-height: 1.6; }
+    @media (max-width: 576px) {
+      .company-table th, .company-table td { display: block; width: 100%; }
+      .company-table th { padding-bottom: 2px; background: transparent; }
+      .company-table td { padding-top: 2px; padding-bottom: 12px; }
+    }
+
+    /* Contact Section */
+    .contact-wrapper { max-width: 800px; margin: 0 auto; }
+    .contact-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 30px; }
+    @media (min-width: 768px) { .contact-grid { grid-template-columns: 1fr 1fr; } }
+    .contact-card { background: #fff; border: 2px solid var(--primary-light); border-radius: var(--radius); padding: 20px; text-align: center; box-shadow: var(--shadow); }
+    .contact-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+    .contact-card .badge { display: inline-block; background: #e63946; color: #fff; font-size: 0.72rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; margin-bottom: 4px; }
+    .contact-card-tel { font-size: 1.7rem; font-weight: 900; color: var(--primary); display: block; margin: 4px 0; }
+    .contact-card p { font-size: 0.8rem; color: var(--text-muted); }
+
+    .form-box { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px 20px; box-shadow: var(--shadow); }
+    @media (min-width: 768px) { .form-box { padding: 36px 32px; } }
+    .form-group { margin-bottom: 20px; }
+    .form-label { display: block; font-size: 0.92rem; font-weight: 700; margin-bottom: 6px; }
+    .form-req { background: #e63946; color: #fff; font-size: 0.7rem; font-weight: 700; padding: 2px 6px; border-radius: 4px; margin-left: 6px; }
+    .form-opt { background: #8d99ae; color: #fff; font-size: 0.7rem; font-weight: 700; padding: 2px 6px; border-radius: 4px; margin-left: 6px; }
+    .form-ctrl { width: 100%; padding: 12px 14px; font-size: 0.95rem; font-family: inherit; border: 1.5px solid var(--border); border-radius: var(--radius); outline: none; background: #fbfdff; }
+    .form-ctrl:focus { border-color: var(--secondary); box-shadow: 0 0 0 3px rgba(2, 128, 144, 0.15); background: #fff; }
+    .chk-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; margin-top: 6px; }
+    .chk-item { display: flex; align-items: center; gap: 6px; font-size: 0.88rem; font-weight: 600; cursor: pointer; background: var(--bg-light); padding: 8px 12px; border-radius: var(--radius); border: 1px solid var(--border); }
+    .chk-item input { accent-color: var(--primary); }
+    textarea.form-ctrl { min-height: 120px; resize: vertical; }
+    .form-submit { text-align: center; margin-top: 24px; }
+    .form-msg { display: none; background: #e8f8f5; border: 2px solid #2ec4b6; color: #0b6b61; padding: 20px; border-radius: var(--radius); text-align: center; font-weight: 700; margin-top: 16px; }
+
+    /* Footer */
+    .footer { background: var(--primary-dark); color: #fff; padding: 45px 0 25px; border-top: 4px solid var(--secondary); text-align: center; }
+    .footer-logo-main { font-size: 1.5rem; font-weight: 800; }
+    .footer-logo-sub { font-size: 0.8rem; color: #90c2e7; margin-bottom: 12px; }
+    .footer-addr { font-size: 0.88rem; color: #e2e8f0; line-height: 1.6; margin-bottom: 20px; }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; font-size: 0.85rem; margin-bottom: 24px; }
+    .footer-links a { color: #d1d5db; }
+    .footer-links a:hover { color: #fff; text-decoration: underline; }
+    .footer-copy { border-top: 1px solid rgba(255,255,255,0.12); padding-top: 18px; font-size: 0.75rem; color: #9ca3af; }
+
+    /* Mobile Sticky Bar */
+    .mobile-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: #fff; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); display: flex; z-index: 999; height: 60px; }
+    @media (min-width: 992px) { .mobile-bar { display: none; } }
+    .mobile-btn { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 0.72rem; font-weight: 700; gap: 2px; color: #fff; }
+    .mobile-btn svg { width: 18px; height: 18px; fill: #fff; }
+    .mobile-btn.tel { background: var(--primary); }
+    .mobile-btn.line { background: var(--line); }
+    .mobile-btn.mail { background: var(--accent); }
+
+    /* Back to Top */
+    .to-top { position: fixed; bottom: 75px; right: 18px; width: 42px; height: 42px; background: var(--primary); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 900; opacity: 0; visibility: hidden; transition: 0.3s; cursor: pointer; border: none; }
+    @media (min-width: 992px) { .to-top { bottom: 25px; } }
+    .to-top.show { opacity: 1; visibility: visible; }
+    .to-top svg { width: 18px; height: 18px; fill: #fff; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo-area">
+        <span class="logo-sub">分譲マンション専門 水回りリフォーム</span>
+        <span class="logo-main">
+          <svg style="width:22px;height:22px;fill:var(--secondary);" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          遠藤商事
+        </span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#about" class="nav-item">強み</a>
+        <a href="#services" class="nav-item">メニュー</a>
+        <a href="#reasons" class="nav-item">選ばれる理由</a>
+        <a href="#flow" class="nav-item">施工の流れ</a>
+        <a href="#faq" class="nav-item">よくある質問</a>
+        <a href="#company" class="nav-item">会社概要</a>
+      </nav>
+
+      <div class="header-cta">
+        <div class="header-tel">
+          <span class="header-tel-label">通話無料・ご相談・現地調査無料</span>
+          <a href="tel:0120856251" class="header-tel-num">0120-856-251</a>
+        </div>
+        <a href="#contact" class="btn btn-accent" style="padding:10px 18px; font-size:0.88rem;">無料見積り</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu-overlay" id="menuOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div>
+      <div style="margin-bottom: 20px;">
+        <span class="logo-sub">分譲マンション専門 水回りリフォーム</span>
+        <div class="logo-main" style="font-size:1.3rem;">遠藤商事</div>
+      </div>
+      <div class="mobile-nav-list">
+        <a href="#about" class="mobile-nav-link">強み <span>›</span></a>
+        <a href="#services" class="mobile-nav-link">リフォームメニュー <span>›</span></a>
+        <a href="#reasons" class="mobile-nav-link">選ばれる理由 <span>›</span></a>
+        <a href="#flow" class="mobile-nav-link">施工の流れ <span>›</span></a>
+        <a href="#faq" class="mobile-nav-link">よくある質問 <span>›</span></a>
+        <a href="#company" class="mobile-nav-link">会社概要 <span>›</span></a>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:10px; margin-top:24px;">
+      <a href="tel:0120856251" class="btn btn-primary" style="width:100%;">📞 0120-856-251（通話無料）</a>
+      <a href="#contact" class="btn btn-accent" style="width:100%;">無料お見積り・ご相談</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <span class="hero-badge">神奈川県全域対応 / 横須賀・湘南・横浜 / 分譲マンション専有部専門</span>
+        <h1 class="hero-title">
+          分譲マンションの<span>水回りリフォーム</span><br>
+          安心の自社責任施工・適正価格でお応えします
+        </h1>
+        <p class="hero-lead">
+          管理規約の確認・工事申請書類の作成から近隣挨拶、配管洗浄まで完全サポート。<br>
+          マンション特有の制約を知り尽くした「遠藤商事」が、快適で安心な住まいをお届けします。
+        </p>
+
+        <div class="hero-features">
+          <div class="hero-feat-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span>マンション管理規約・構造に精通</span>
+          </div>
+          <div class="hero-feat-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span>給排水管・給湯管クリーニング対応</span>
+          </div>
+          <div class="hero-feat-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span>現地調査・お見積り 完全無料</span>
+          </div>
+        </div>
+
+        <div class="hero-ctas">
+          <a href="tel:0120856251" class="btn btn-accent" style="font-size:1.05rem; padding:15px 32px;">
+            <svg style="width:20px;height:20px;fill:currentColor;" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            通話無料 0120-856-251
+          </a>
+          <a href="#contact" class="btn btn-line" style="font-size:1.05rem; padding:15px 30px;">
+            <svg style="width:20px;height:20px;fill:currentColor;" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 5.82 2 10.53c0 2.92 1.77 5.51 4.5 6.99-.2.74-.72 2.7-0.82 3.12-.13.52.19.51.4.38.16-.1 2.24-1.53 3.16-2.16.89.26 1.83.4 2.76.4 5.52 0 10-3.82 10-8.53S17.52 2 12 2z"/></svg>
+            LINEでかんたん無料相談
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problems -->
+    <section id="about" class="section-padding bg-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-en">Troubles</span>
+          <h2 class="section-title">こんなお悩みはございませんか？</h2>
+          <p class="section-desc">分譲マンションのリフォームは、戸建てと異なる専門知識と配慮が必要です。</p>
+        </div>
+
+        <div class="problem-grid">
+          <div class="problem-card">
+            <div class="problem-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg></div>
+            <h3>規約や手続きが面倒</h3>
+            <p>管理組合への工事申請書類や図面提出、承認待ちなど、何から手をつけて良いかわからない。</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon"><svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg></div>
+            <h3>配管や躯体の制約</h3>
+            <p>パイプスペース（PS）や床下配管の勾配制限があり、希望の設備が付くか不安。</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+            <h3>騒音・水漏れリスク</h3>
+            <p>上下左右のお部屋への騒音や共用部の養生、階下への漏水事故リスクが心配。</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon"><svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg></div>
+            <h3>大手のリフォーム費用</h3>
+            <p>大手リフォーム会社の見積もりを見たら、営業経費や中間マージンが上乗せされていた。</p>
+          </div>
+        </div>
+
+        <div class="solution-box">
+          <h3>分譲マンション専門の「遠藤商事」なら、<br>規約確認・申請代行から自社責任施工までワンストップで解決いたします！</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reasons -->
+    <section id="reasons" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-en">Why Choose Us</span>
+          <h2 class="section-title">遠藤商事が選ばれる5つの理由</h2>
+          <p class="section-desc">分譲マンションオーナー様に選ばれ続ける、確かな理由があります。</p>
+        </div>
+
+        <div class="reasons-list">
+          <div class="reason-card">
+            <div class="reason-num"><span>REASON</span><strong>01</strong></div>
+            <div>
+              <h3>分譲マンションの構造・管理規約に完全特化</h3>
+              <p>専有部分と共用部分の区分、床遮音等級（LL-45/LL-40等）、PS配管勾配などマンション特有の制約を熟知。規約違反やトラブルのない確実なリフォームをご提案します。</p>
+            </div>
+          </div>
+          <div class="reason-card">
+            <div class="reason-num"><span>REASON</span><strong>02</strong></div>
+            <div>
+              <h3>管理組合への申請書類作成・近隣挨拶を代行</h3>
+              <p>煩わしい管理組合への工事申請書や工程表の作成・提出をサポート。着工前には上下左右のお部屋へ丁寧なご挨拶回りと工事説明を行い、トラブルを未然に防ぎます。</p>
+            </div>
+          </div>
+          <div class="reason-card">
+            <div class="reason-num"><span>REASON</span><strong>03</strong></div>
+            <div>
+              <h3>水回り設備から見えない給排水管・給湯管まで一貫施工</h3>
+              <p>キッチンや浴室の設備交換だけでなく、専有部の給水管・給湯管・排水管のクリーニングや交換更新工事も一貫対応。漏水事故を予防し、資産価値を守ります。</p>
+            </div>
+          </div>
+          <div class="reason-card">
+            <div class="reason-num"><span>REASON</span><strong>04</strong></div>
+            <div>
+              <h3>中間マージンをカットした明朗・適正価格</h3>
+              <p>大手のような過大な広告宣伝費や下請け中間マージンを排除。自社責任体制による直接施工により、国内主要メーカー設備を適正・良心価格でご提供します。</p>
+            </div>
+          </div>
+          <div class="reason-card">
+            <div class="reason-num"><span>REASON</span><strong>05</strong></div>
+            <div>
+              <h3>地域密着！迅速なフットワークと丁寧なアフターフォロー</h3>
+              <p>横須賀市船越町を拠点に、神奈川県全域へ地域密着展開。現地調査やお困りごとのご相談にスピーディーに対応し、施工完了後も安心のサポートをお約束します。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section-padding bg-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-en">Service Menu</span>
+          <h2 class="section-title">リフォーム・設備メンテナンスメニュー</h2>
+          <p class="section-desc">主要国内メーカー（TOTO、LIXIL、Panasonic、クリナップ等）取扱対応</p>
+        </div>
+
+        <div class="service-grid">
+          <!-- Kitchen -->
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg></div>
+              <h3>システムキッチン</h3>
+            </div>
+            <div class="service-card-body">
+              <p>使い勝手と清掃性に優れた最新システムキッチンへの刷新。マンション特有の換気ダクトや給排水経路に合わせたプランをご提案。</p>
+              <ul class="service-list">
+                <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> 食洗機新設・ビルトインコンロ交換</li>
+                <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> 静音シンク・お手入れ簡単レンジフード</li>
+              </ul>
+              <div class="service-price">参考価格：45万円〜（工事費込・税抜）</div>
+            </div>
+          </div>
+
+          <!-- Bath -->
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M21 10.5V9a1 1 0 0 0-1-1h-6.2l1.6-4.8a1 1 0 0 0-.6-1.2 1 1 0 0 0-1.3.6L12 7.1 9.5 2.6A1 1 0 0 0 8.2 2a1 1 0 0 0-.6 1.3L9.2 8H3a1 1 0 0 0-1 1v1.5C2 15.2 5.8 19 10.5 19H12v2h2v-2h1.5c4.7 0 8.5-3.8 8.5-8.5z"/></svg></div>
+              <h3>浴室・ユニットバス</h3>
+            </div>
+            <div class="service-card-body">
+              <p>高断熱浴槽と乾きやすい床でお手入れ快適。マンションの梁や柱に合わせたサイズオーダー・浴室暖房乾燥機も対応。</p>
+              <ul class="service-list">
+                <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> マンション専用高断熱ユニットバス</li>
+                <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> 浴室暖房乾燥機（24時間換気）新設</li>
+              </ul>
+              <div class="service-price">参考価格：55万円〜（工事費込・税抜）</div>
+            </div>
+          </div>
+
+          <!-- Toilet -->
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></div>
+              <h3>トイレリフォーム</h3>
+            </div>
+            <div class="service-card-body">
+              <p>節水性能が高く掃除しやすい最新タンクレストイレ。マンションの壁排水・床排水両対応。内装クロス張替も対応。</p>
+              <ul class="service-list">
+                <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> マンション排水方式（壁排水・床排水）対応</li>
+                <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> 最新節水型・フチなし形状・自動洗浄</li>
+              </ul>
+              <div class="service-price">参考価格：12万円〜（工事費込・税抜）</div>
+            </div>
+          </div>
+
+          <!-- Vanity -->
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/></svg></div>
+              <h3>洗面化粧台</h3>
+            </div>
+            <div class="service-card-body">
+              <p>三面鏡裏の豊富な収納、LED照明、節水シャワー水栓など、朝の身支度を快適にする洗面空間へとリフレッシュ。</p>
+              <ul class="service-list">
+                <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> 大容量収納付きスライドキャビネット</li>
+                <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> 隙間ピッタリスリム設計・間口調整</li>
+              </ul>
+              <div class="service-price">参考価格：9万円〜（工事費込・税抜）</div>
+            </div>
+          </div>
+
+          <!-- Pipes -->
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div>
+              <h3>給排水管・給湯管洗浄・更新</h3>
+            </div>
+            <div class="service-card-body">
+              <p>築15年以上のマンションで多発する配管の赤水・サビ・詰まり・悪臭を解消。専有部の隠蔽配管を高圧洗浄＆更新。</p>
+              <ul class="service-list">
+                <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> 専用機材による高圧洗浄・管内クリーニング</li>
+                <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> サビに強い架橋ポリエチレン管への更新</li>
+              </ul>
+              <div class="service-price">参考価格：現地調査後にお見積り</div>
+            </div>
+          </div>
+
+          <!-- Water Heater -->
+          <div class="service-card">
+            <div class="service-card-header">
+              <div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/></svg></div>
+              <h3>給湯器交換（PS・ベランダ）</h3>
+            </div>
+            <div class="service-card-body">
+              <p>急な給湯器の故障に迅速対応。マンションのパイプシャフト（PS設置）やベランダ設置型に対応した省エネ給湯器。</p>
+              <ul class="service-list">
+                <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> マンション専用PS設置型・上方排気等対応</li>
+                <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> 高効率ガス給湯器「エコジョーズ」取扱</li>
+              </ul>
+              <div class="service-price">参考価格：11万円〜（本体＋工事費込・税抜）</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flow -->
+    <section id="flow" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-en">Workflow</span>
+          <h2 class="section-title">ご相談から施工・完了までの流れ</h2>
+          <p class="section-desc">初めてのリフォームでも安心。専任担当が丁寧に伴走いたします。</p>
+        </div>
+
+        <div class="flow-list">
+          <div class="flow-step">
+            <div class="flow-badge">STEP 01</div>
+            <div>
+              <h3>お問い合わせ・ご相談（通話無料）</h3>
+              <p>フリーダイヤル 0120-856-251、Webフォーム、または公式LINEよりお気軽にご連絡ください。「まずは概算費用を知りたい」というご相談も歓迎です。</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-badge">STEP 02</div>
+            <div>
+              <h3>現地調査・規約確認（完全無料）</h3>
+              <p>専門スタッフがお伺いし、専有部分の採寸、配管経路、管理規約（遮音等級や工事可能時間など）を綿密に確認いたします。</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-badge">STEP 03</div>
+            <div>
+              <h3>プラン・お見積りのご提示（無料）</h3>
+              <p>ご要望とマンション構造に合わせた最適なプランとお見積りをご提示します。明朗会計で不要なオプションの強引な営業は一切ありません。</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-badge">STEP 04</div>
+            <div>
+              <h3>管理組合への工事申請＆近隣挨拶</h3>
+              <p>管理組合への提出書類・工程表の準備を代行サポート。着工前には上下左右のお部屋へ工事挨拶と日程周知を丁寧に行います。</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-badge">STEP 05</div>
+            <div>
+              <h3>丁寧な養生＆安心施工</h3>
+              <p>エレベーターや共用廊下などの共用部を保護養生し、有資格者が安全かつスピーディーに責任施工を行います。</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-badge">STEP 06</div>
+            <div>
+              <h3>ご確認・お引き渡し・アフターフォロー</h3>
+              <p>仕上がりをご確認いただき、器具の取り扱い説明を行ってお引き渡しとなります。万が一の不具合にも迅速に駆けつけます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-padding bg-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-en">FAQ</span>
+          <h2 class="section-title">よくあるご質問</h2>
+          <p class="section-desc">お客様から多く寄せられる質問にお答えいたします。</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q">
+              <span class="faq-q-txt"><span class="faq-q-badge">Q</span> マンションの管理組合へのリフォーム申請は代行してもらえますか？</span>
+              <svg class="faq-icon" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner"><span class="faq-a-badge">A</span><p>はい、お任せください。工事申請書や工程表、仕様図面など管理組合へ提出が必要な書類の作成・準備をしっかりサポートいたします。</p></div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              <span class="faq-q-txt"><span class="faq-q-badge">Q</span> 工事中の騒音や近隣住民への影響が心配です。</span>
+              <svg class="faq-icon" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner"><span class="faq-a-badge">A</span><p>着工前に上下左右・近隣のお部屋へ担当者が直接ご挨拶に伺い、工事日程をご説明します。また共用部の養生を徹底しマナーを厳守します。</p></div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              <span class="faq-q-txt"><span class="faq-q-badge">Q</span> 住みながら（在宅のまま）水回りの工事はできますか？</span>
+              <svg class="faq-icon" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner"><span class="faq-a-badge">A</span><p>はい、可能です。トイレや洗面、給湯器交換など短時間の工事はもちろん、浴室・キッチンの工事中も生活への負担を最小限に抑える段取りを組みます。</p></div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              <span class="faq-q-txt"><span class="faq-q-badge">Q</span> 見積もりをお願いしたらしつこく営業されませんか？</span>
+              <svg class="faq-icon" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner"><span class="faq-a-badge">A</span><p>遠藤商事では、しつこい訪問営業や強引な電話勧誘は一切行いません。お見積りをご納得いただいた場合のみご契約となりますのでご安心ください。</p></div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">
+              <span class="faq-q-txt"><span class="faq-q-badge">Q</span> 配管洗浄（給水管・給湯管クリーニング）だけでも依頼できますか？</span>
+              <svg class="faq-icon" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner"><span class="faq-a-badge">A</span><p>もちろん可能です。「赤水が出る」「水の出が悪い」「悪臭がする」といった配管トラブルのみのご相談・高圧洗浄も喜んで承ります。</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company -->
+    <section id="company" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-en">Company Profile</span>
+          <h2 class="section-title">会社概要</h2>
+          <p class="section-desc">地域密着で確かな信頼と技術をお届けします。</p>
+        </div>
+
+        <div class="company-box">
+          <table class="company-table">
+            <tbody>
+              <tr>
+                <th>屋号</th>
+                <td><strong>遠藤商事</strong>（Endo Shoji）</td>
+              </tr>
+              <tr>
+                <th>代表者</th>
+                <td>遠藤 毅</td>
+              </tr>
+              <tr>
+                <th>所在地</th>
+                <td>〒237-0076 神奈川県横須賀市船越町１－５７ 山田屋ビル１階</td>
+              </tr>
+              <tr>
+                <th>フリーダイヤル</th>
+                <td>
+                  <strong style="font-size:1.15rem; color:var(--primary);">0120-856-251</strong>
+                  <span style="margin-left:6px; font-size:0.78rem; background:#e63946; color:#fff; padding:2px 6px; border-radius:4px; font-weight:700;">通話無料</span>
+                  <div style="font-size:0.82rem; color:var(--text-muted); margin-top:2px;">（携帯電話・スマートフォンからも通話料無料）</div>
+                </td>
+              </tr>
+              <tr>
+                <th>事業内容</th>
+                <td>
+                  ・分譲マンション専有部リフォーム工事一式<br>
+                  ・水回り設備工事（システムキッチン、ユニットバス、洗面化粧台、トイレ）<br>
+                  ・給水管・給湯管・排水管クリーニング（高圧洗浄）および配管更新工事<br>
+                  ・住宅設備機器（ガス給湯器・エコジョーズ・レンジフード等）の販売・施工<br>
+                  ・マンション管理規約確認・工事申請書類作成サポート
+                </td>
+              </tr>
+              <tr>
+                <th>対応エリア</th>
+                <td>
+                  <strong>神奈川県全域</strong>（横須賀市、横浜市、小田原市、川崎市、鎌倉市、逗子市、三浦市、葉山町、藤沢市、茅ヶ崎市、平塚市ほか）および近隣地域
+                </td>
+              </tr>
+              <tr>
+                <th>営業時間 / 定休日</th>
+                <td>9:00 〜 18:00（土日祝も対応 / Web・LINEお問い合わせは24時間受付）</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="section-padding bg-light">
+      <div class="container contact-wrapper">
+        <div class="section-header">
+          <span class="section-en">Contact Us</span>
+          <h2 class="section-title">お問い合わせ・無料お見積り</h2>
+          <p class="section-desc">現地調査・お見積り・ご相談は完全無料です。お気軽にお問い合わせください。</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <span class="badge">通話無料・ご相談無料</span>
+            <h3>お電話でのお問い合わせ</h3>
+            <a href="tel:0120856251" class="contact-card-tel">0120-856-251</a>
+            <p>受付時間：9:00〜18:00（携帯・スマホからも通話無料）</p>
+          </div>
+
+          <div class="contact-card" style="border-color: var(--line);">
+            <span class="badge" style="background: var(--line);">24時間受付・相談無料</span>
+            <h3>LINE公式アカウントで相談</h3>
+            <a href="#" class="btn btn-line" style="margin: 6px auto; width: 90%;">
+              <svg style="width:18px;height:18px;fill:currentColor;" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 5.82 2 10.53c0 2.92 1.77 5.51 4.5 6.99-.2.74-.72 2.7-0.82 3.12-.13.52.19.51.4.38.16-.1 2.24-1.53 3.16-2.16.89.26 1.83.4 2.76.4 5.52 0 10-3.82 10-8.53S17.52 2 12 2z"/></svg>
+              LINE友だち追加で簡単相談
+            </a>
+            <p>写真をスマホで送るだけで概算診断！</p>
+          </div>
+        </div>
+
+        <div class="form-box">
+          <form id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label class="form-label" for="userName">お名前 <span class="form-req">必須</span></label>
+              <input type="text" id="userName" class="form-ctrl" placeholder="例：山田 太郎" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="userKana">フリガナ <span class="form-opt">任意</span></label>
+              <input type="text" id="userKana" class="form-ctrl" placeholder="例：ヤマダ タロウ">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="userTel">お電話番号 <span class="form-req">必須</span></label>
+              <input type="tel" id="userTel" class="form-ctrl" placeholder="例：090-1234-5678" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="userEmail">メールアドレス <span class="form-req">必須</span></label>
+              <input type="email" id="userEmail" class="form-ctrl" placeholder="例：sample@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="userAddress">ご住所・マンション名 <span class="form-opt">任意</span></label>
+              <input type="text" id="userAddress" class="form-ctrl" placeholder="例：神奈川県横須賀市船越町〇〇 マンション名〇〇号室">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">ご希望のリフォーム箇所（複数選択可） <span class="form-req">必須</span></label>
+              <div class="chk-grid">
+                <label class="chk-item"><input type="checkbox" name="services" value="kitchen"> システムキッチン</label>
+                <label class="chk-item"><input type="checkbox" name="services" value="bath"> 浴室・ユニットバス</label>
+                <label class="chk-item"><input type="checkbox" name="services" value="toilet"> トイレ</label>
+                <label class="chk-item"><input type="checkbox" name="services" value="vanity"> 洗面化粧台</label>
+                <label class="chk-item"><input type="checkbox" name="services" value="pipes"> 給排水管・給湯管洗浄</label>
+                <label class="chk-item"><input type="checkbox" name="services" value="heater"> 給湯器交換</label>
+                <label class="chk-item"><input type="checkbox" name="services" value="whole"> 水回り丸ごと一式</label>
+                <label class="chk-item"><input type="checkbox" name="services" value="other"> その他・相談のみ</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="userMessage">ご相談内容・ご要望 <span class="form-opt">任意</span></label>
+              <textarea id="userMessage" class="form-ctrl" placeholder="ご希望の工事時期、現在のお困りごと（水漏れ、老朽化、間取り変更希望等）がございましたらご自由にご記入ください。"></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn-accent" style="font-size:1.05rem; padding:15px 40px; width:100%; max-width:360px;">
+                上記の内容で無料相談・送信する
+              </button>
+              <p style="font-size:0.8rem; color:var(--text-muted); margin-top:10px;">※ 送信いただいた個人情報は、お問い合わせ対応および現地調査のご連絡にのみ使用いたします。</p>
+            </div>
+          </form>
+
+          <div id="formSuccess" class="form-msg">
+            <h3>お問い合わせありがとうございます！</h3>
+            <p style="margin-top:6px; font-size:0.9rem; font-weight:normal;">送信が完了いたしました。内容を確認の上、担当者より1営業日以内にご連絡させていただきます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo-sub">分譲マンション専門 水回りリフォーム＆配管メンテナンス</div>
+      <div class="footer-logo-main">遠藤商事</div>
+      <div class="footer-addr">
+        〒237-0076 神奈川県横須賀市船越町１－５７ 山田屋ビル１階<br>
+        フリーダイヤル：<a href="tel:0120856251" style="color:#ffe169; font-weight:700;">0120-856-251</a>（通話料無料）
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">強み</a>
+        <a href="#services">メニュー</a>
+        <a href="#reasons">選ばれる理由</a>
+        <a href="#flow">施工の流れ</a>
+        <a href="#faq">よくある質問</a>
+        <a href="#company">会社概要</a>
+        <a href="#contact">お問い合わせ</a>
+      </div>
+
+      <div class="footer-copy">
+        &copy; 2026 遠藤商事 (Endo Shoji). All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Bottom Bar -->
+  <div class="mobile-bar">
+    <a href="tel:0120856251" class="mobile-btn tel">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      通話無料 電話
+    </a>
+    <a href="#contact" class="mobile-btn line">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 5.82 2 10.53c0 2.92 1.77 5.51 4.5 6.99-.2.74-.72 2.7-0.82 3.12-.13.52.19.51.4.38.16-.1 2.24-1.53 3.16-2.16.89.26 1.83.4 2.76.4 5.52 0 10-3.82 10-8.53S17.52 2 12 2z"/></svg>
+      LINE相談
+    </a>
+    <a href="#contact" class="mobile-btn mail">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      無料見積
+    </a>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="toTop" class="to-top" aria-label="先頭へ戻る">
+    <svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile Drawer Menu
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuOverlay = document.getElementById('menuOverlay');
+      const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+      function toggleMenu() {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        menuOverlay.classList.toggle('active');
+        document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+      }
+
+      hamburger.addEventListener('click', toggleMenu);
+      menuOverlay.addEventListener('click', toggleMenu);
+
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          if (mobileMenu.classList.contains('active')) {
+            toggleMenu();
+          }
+        });
+      });
+
+      // FAQ Accordion
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const btn = item.querySelector('.faq-q');
+        btn.addEventListener('click', () => {
+          const isOpen = item.classList.contains('active');
+          faqItems.forEach(other => other.classList.remove('active'));
+          if (!isOpen) {
+            item.classList.add('active');
+          }
+        });
+      });
+
+      // Back to Top Button
+      const toTop = document.getElementById('toTop');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 350) {
+          toTop.classList.add('show');
+        } else {
+          toTop.classList.remove('show');
+        }
+      });
+
+      toTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+
+    // Form Submit Handler
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const checkboxes = document.querySelectorAll('input[name="services"]:checked');
+      if (checkboxes.length === 0) {
+        alert('ご希望のリフォーム箇所を1つ以上選択してください。');
+        return;
+      }
+      document.getElementById('contactForm').style.display = 'none';
+      const msg = document.getElementById('formSuccess');
+      msg.style.display = 'block';
+      msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  </script>
+</body>
+</html>
